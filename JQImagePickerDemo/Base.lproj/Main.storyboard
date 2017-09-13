@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YQn-Th-0qC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbB-qY-mST">
+                                <rect key="frame" x="67" y="135" width="240" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.69290176410000004" blue="0.22086018230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="bdl-6b-I5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="系统裁剪">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="systemCutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ee-0V-IWY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDr-IP-bE5">
+                                <rect key="frame" x="67" y="198" width="240" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.69290176410000004" blue="0.22086018230000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="1cq-ce-mpG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="自定义裁剪">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="customCutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8l-Ln-0Ze"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vYj-Id-qWb">
+                                <rect key="frame" x="67" y="309" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="IZr-Do-uEW"/>
+                                    <constraint firstAttribute="height" constant="128" id="XyV-uO-OZb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vYj-Id-qWb" firstAttribute="top" secondItem="TDr-IP-bE5" secondAttribute="bottom" constant="70" id="8TD-7L-0ek"/>
+                            <constraint firstItem="TDr-IP-bE5" firstAttribute="top" secondItem="RbB-qY-mST" secondAttribute="bottom" constant="22" id="DWl-OR-BJM"/>
+                            <constraint firstAttribute="trailing" secondItem="RbB-qY-mST" secondAttribute="trailing" constant="68" id="UuG-em-rEf"/>
+                            <constraint firstItem="RbB-qY-mST" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="W9R-gz-q3W"/>
+                            <constraint firstAttribute="trailing" secondItem="TDr-IP-bE5" secondAttribute="trailing" constant="68" id="YWk-dn-5Vb"/>
+                            <constraint firstItem="vYj-Id-qWb" firstAttribute="centerX" secondItem="TDr-IP-bE5" secondAttribute="centerX" id="ZSt-4Q-X2e"/>
+                            <constraint firstItem="RbB-qY-mST" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="bPZ-DQ-PE2"/>
+                            <constraint firstItem="TDr-IP-bE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="rsR-I6-QE6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xqK-3u-Xzg"/>
+                    <connections>
+                        <outlet property="currentImageView" destination="vYj-Id-qWb" id="Xs8-Jz-Gw0"/>
+                        <outlet property="heightConstrint" destination="XyV-uO-OZb" id="2Eg-oG-pOu"/>
+                        <outlet property="widthConstrint" destination="IZr-Do-uEW" id="bym-9t-7TS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QeK-4R-vAk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YQn-Th-0qC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RFe-BJ-GLK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a7n-il-X7A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ono-cg-iA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
