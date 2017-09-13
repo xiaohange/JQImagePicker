@@ -2,6 +2,12 @@
 前言
 ===
 iOS照片自定义裁剪, 自定义宽高比裁剪, 经典16:9等裁剪方式,代码调用简单精炼.
+##### 1.自定义裁剪
+
+![自定义裁剪](https://github.com/xiaohange/JQImagePicker/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE1.gif?raw=true)
+
+##### 2.系统自带裁剪
+![系统自带裁剪](https://github.com/xiaohange/JQImagePicker/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE2.gif?raw=true)
 
 ## 更新记录
 
