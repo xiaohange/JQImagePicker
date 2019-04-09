@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "JQImagePicker"
-s.version      = "0.0.4"
+s.version      = "1.0.0"
 s.summary      = "IOS photos custom cut, custom width ratio cut, code calls simple refining."
 s.homepage     = "https://github.com/xiaohange/JQImagePicker"
 s.license      = { :type => "MIT", :file => "LICENSE" }

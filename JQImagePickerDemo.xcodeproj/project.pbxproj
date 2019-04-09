@@ -230,7 +230,7 @@
 				TargetAttributes = {
 					47ED09C11F6921C80069EB5F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = WTB2BKP7UZ;
+						DevelopmentTeam = NXY5JXSFY9;
 						ProvisioningStyle = Automatic;
 					};
 					47ED09DA1F6921C80069EB5F = {
@@ -252,6 +252,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -455,7 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WTB2BKP7UZ;
+				DEVELOPMENT_TEAM = NXY5JXSFY9;
 				INFOPLIST_FILE = JQImagePickerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -468,7 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WTB2BKP7UZ;
+				DEVELOPMENT_TEAM = NXY5JXSFY9;
 				INFOPLIST_FILE = JQImagePickerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -546,6 +547,7 @@
 				47ED09F11F6921C80069EB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47ED09F21F6921C80069EB5F /* Build configuration list for PBXNativeTarget "JQImagePickerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +556,7 @@
 				47ED09F41F6921C80069EB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47ED09F51F6921C80069EB5F /* Build configuration list for PBXNativeTarget "JQImagePickerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +565,7 @@
 				47ED09F71F6921C80069EB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -42,23 +42,11 @@
     return self;
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-    [[UIApplication sharedApplication] setStatusBarHidden:YES];
-}
-
 - (void)viewDidLoad{
     [super viewDidLoad];
     [self initSubView];
     [self initControlBtn];
     [self addGestureRecognizers];
-}
-
-- (void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 - (void)dealloc {

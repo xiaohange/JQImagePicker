@@ -82,7 +82,7 @@
         __weak typeof(self) weakself = self;
         [_imageCropperController setSubmitblock:^(UIViewController *viewController , UIImage *image) {
             [viewController dismissViewControllerAnimated:YES completion:nil];
-            if (weakself.delegate) {
+            if (weakself.delegate && [weakself.delegate respondsToSelector:@selector(imagePicker:didFinished:)]) {
                 [weakself.delegate imagePicker:weakself didFinished:image];
             }
         }];
@@ -97,14 +97,16 @@
         [picker pushViewController:self.imageCropperController animated:YES];
     }else{
         [picker dismissViewControllerAnimated:YES completion:^{}];
-        [self.delegate imagePicker:self didFinished:image];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(imagePicker:didFinished:)]) {
+            [self.delegate imagePicker:self didFinished:image];
+        }
     }
     
 }
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [picker dismissViewControllerAnimated:YES completion:^{}];
-    if (self.delegate) {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(imagePickerDidCancel:)]) {
         [self.delegate imagePickerDidCancel:self];
     }
 }
